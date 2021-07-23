@@ -1,0 +1,27 @@
+.menu
+    &__close
+        display: none
+    &__overlay
+        display: none
+    &__list    
+        list-style: none
+        margin: 0 auto
+        li
+            display: block
+            cursor: pointer
+            text-align: center
+            padding: 20px
+            a
+                text-decoration: none
+                font-size: 1.125em
+                font-weight: 500
+                line-height: 1.22
+                color: black
+            &:hover
+                background: $yellow-clr
+                a
+                    color: white
+        .active
+            background: $grey-clr
+            a
+                color: white

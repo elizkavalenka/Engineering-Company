@@ -1,0 +1,50 @@
+.promo 
+    background: url('../img/Bg.jpg') center/cover no-repeat
+    padding-top: 130px
+    padding-bottom: 40px
+    .container
+        .wrapper
+            margin-bottom: 94px
+            max-width: 650px
+            .colored-block 
+                background: $yellow-clr
+                color: white
+                font-weight: 700
+                font-size: 0.813em
+                line-height: 1.23
+                letter-spacing: 0.2em
+                text-transform: uppercase
+                max-width: 229px
+                padding: 11px 20px
+                margin-bottom: 20px
+            .promo__title
+                font-weight: 900
+                font-size: 3.75em
+                line-height: 1.13
+                color:  white
+                margin-bottom: 20px
+            .promo__descr
+                color:  white
+                font-size: 1.375em
+                line-height: 1.27
+                font-weight: 300
+        .promo__navigation
+            ul
+                list-style: none
+                max-width: 120px
+                display: flex
+                justify-content: space-between
+                margin: 0 auto
+                li  
+                    display: block
+                    height: 12px
+                    width: 12px
+                    background: rgba(255, 255, 255, 0.1)
+                    border: 1px solid white
+                    cursor: pointer
+                    &:hover
+                        background: white
+                        border: 1px solid white
+                .active
+                    background: $yellow-clr
+                    border: 1px solid $yellow-clr

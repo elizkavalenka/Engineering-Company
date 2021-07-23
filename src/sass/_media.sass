@@ -1,0 +1,118 @@
+@media (max-width: 1199px) 
+    .menu
+        li
+            padding: 10px
+    .services
+        .container 
+            ul 
+                li.col a
+                    flex-direction: column
+                    text-align: center
+                    p
+                        margin: 0
+                        margin-top: 10px
+              
+
+@media (max-width: 991px) 
+    .menu
+        &__list li a
+            font-size: 0.813em
+
+@media (max-width: 768px) 
+    header
+        .search.col-md-6.ms-auto
+            display: none
+    .hamburger 
+        display: flex
+        right: 20px
+    .menu 
+        width: 250px
+        position: fixed
+        top: 0
+        left: -100%
+        width: 100%
+        height: 100vh
+        z-index: 10
+        visibility: hidden
+        opacity: 0
+        transition: all 0.6s
+        &.active
+            left: 0
+            visibility: visible
+            opacity: 1
+        &__block
+            position: relative
+            width: 50vw
+            height: 100%
+            background-color: $grey-clr
+            padding-top: 100px
+            transition: all 0.6s
+            z-index: 10
+        &__close
+            display: block
+            position: absolute
+            top: 25px
+            right: 25px
+            cursor: pointer
+        &__list
+            flex-direction: column
+            list-style-type: none
+            padding: 0
+            li
+                position: relative
+                margin-bottom: 15px
+                a
+                    color: white
+                    text-decoration: none
+                    font-weight: 700
+                    font-size: 1.125em
+                    line-height: 1.6
+                    display: block
+        &__overlay
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100vh
+            background: $grey-clr
+            opacity: 0.75
+    
+    .main 
+        .promo .container .wrapper
+            margin: 0 auto 94px
+            .promo__title     
+                text-align: center
+                font-size: 3em
+            .promo__descr
+                text-align: center
+            .colored-block
+                margin: 0 auto 20px
+@media (max-width: 576px)
+    header
+        padding: 0
+        position: fixed
+        top: 0
+        background: rgba(255, 255, 255, 0.9)
+        width: 100%
+        padding: 5px 15px
+        border: none
+        .container.row
+            padding: 0
+            margin: 0
+            .logo.col
+                padding: 0
+            .hamburger.col-1
+                padding: 0
+    .main 
+        .promo 
+            height: 100vh
+            .container 
+                .wrapper
+                    height: 60vh
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-around
+                    .promo__title     
+                        font-size: 8vw
+                    .promo__descr     
+                        font-size: 4.5vw

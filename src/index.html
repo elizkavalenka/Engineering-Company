@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container row">
+        <div class="logo col"><a href="#"> 
+            <picture>
+              <source srcset="img/logo_small.svg" media="(max-width: 576px)"><img src="img/logo.svg" alt="logo">
+            </picture></a></div>
+        <div class="search col-md-6 ms-auto">
+          <input type="text" placeholder="Поиск по сайту"><img src="img/search-icon.svg" alt="search">
+        </div>
+        <div class="hamburger col-1"><span></span><span class="long"></span><span></span></div>
+      </div>
+    </header>
+    <div class="menu">     
+      <div class="menu__block">
+        <div class="menu__close"><img src="img/close.svg" alt="close"></div>
+        <nav>
+          <div class="container"> 
+            <ul class="row menu__list">
+              <li class="col"><a href="#">О компании </a></li>
+              <li class="col"><a href="#">Услуги</a></li>
+              <li class="col"><a href="#">Объекты</a></li>
+              <li class="col"><a href="#">Закупки</a></li>
+              <li class="col"><a href="#">Партнеры</a></li>
+              <li class="col active"><a href="#">Новости</a></li>
+              <li class="col"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="menu__overlay"></div>
+    </div>
+    <section class="main">
+      <div class="promo"> 
+        <div class="container">
+          <div class="wrapper">
+            <div class="colored-block">наши компетенции</div>
+            <h1 class="promo__title">Объекты химической промышленности</h1>
+            <div class="promo__descr">Важнейшим преимуществом компании является способность проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта</div>
+          </div>
+          <div class="promo__navigation">
+            <ul>
+              <li class="active"> <a href="#"> </a></li>
+              <li> <a href="#"> </a></li>
+              <li> <a href="#"> </a></li>
+              <li> <a href="#"> </a></li>
+              <li> <a href="#"> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="services">
+      <div class="container">
+        <ul class="row">
+          <li class="col"><a href="#"><img src="img/ic_1.svg" alt="proj">
+              <p>Услуги проектирования</p></a></li>
+          <li class="col"><a href="#"><img src="img/ic_2.svg" alt="build">
+              <p>Строительно-монтажные работы</p></a></li>
+          <li class="col"><a href="#"><img src="img/ic_3.svg" alt="expert">
+              <p>Экспертная деятельность</p></a></li>
+          <li class="col"><a href="#"><img src="img/ic_4.svg" alt="tech">
+              <p>Техническое обслуживание</p></a></li>
+          <li class="col"><a href="#"><img src="img/ic_5.svg" alt="lab">
+              <p>Испытательная лаборатория   </p></a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger'),
+          menu = document.querySelector('.menu'),
+          closeElement = document.querySelector('.menu__close');
+      hamburger.addEventListener('click', () => {
+          menu.classList.add('active');
+      });
+      closeElement.addEventListener('click', () => {
+          menu.classList.remove('active');
+      });                                                                
+    </script>
+  </body>
+</html>
